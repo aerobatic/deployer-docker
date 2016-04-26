@@ -46,7 +46,7 @@ RUN curl --fail -ssL -o /tmp/setup-hugo https://github.com/spf13/hugo/releases/d
   dpkg -i /tmp/setup-hugo && rm -f /tmp/setup-hugo
 
 # Install python based static site generators
-RUN pip install pelican pygments awscli
+RUN pip install pelican pygments pygments-github-lexers awscli
 
 # Set common environment variables
 ENV NODE_ENV=production
