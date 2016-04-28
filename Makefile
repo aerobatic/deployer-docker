@@ -25,3 +25,6 @@ clean_untagged:
 
 clean_images:
 	docker rmi $(NAME):latest $(NAME):$(VERSION) || true
+
+login:
+	aws ecr get-login --region us-west-2
